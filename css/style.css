@@ -327,12 +327,8 @@ a {
 }
 
 /* 会社概要 */
-.company_table {
-  margin: 3px auto;
-}
-
-.company_ttl {
-  padding-left: 325px;
+table {
+  width: 100%;
 }
 
 th, td {
@@ -345,28 +341,24 @@ th {
   font-weight: bold;
   background-color: #eeeeee;
   text-align: left;
-  padding-right: 50px;
-}
-
-td {
-  padding-right: 300px;
 }
 
 .company_content {
-  padding: 5% 0%;
+  padding: 100px 250px;
 }
 
 .company_info_img {
   position: relative;
-}
-
-.info_img {
   width: 100%;
 }
 
 .company_info {
+  width: 100%;
   display: flex;
-  margin: 100px 0px;
+}
+
+.info_img {
+  width: 100%;
 }
 
 .info_text {
@@ -382,14 +374,13 @@ td {
 
 /* お問い合わせ */
 .content_contact {
-  text-align: center;
-  margin-bottom: 100px;
+  margin: 100px 0px;
 }
 
 .contact_text {
   color: #696969;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 25px;text-align: center;
 }
 
 input {
@@ -410,7 +401,6 @@ input {
   background: linear-gradient(90deg, #df00c2, #d5009e);
   box-shadow: 0px 5px 3px #993399;
   width: 250px;
-  display: block;
   padding: 18px;
   color: #fff;
   font-size: 16px;
@@ -418,11 +408,10 @@ input {
   border-radius: 30px;
   border: none;
   z-index: 0;
-  text-align: center;
 }
 
 input [type="submit"]{
-  display: block;
+  /* display: block; */
   border: none;
   outline: 0;
   cursor: pointer;
@@ -430,19 +419,20 @@ input [type="submit"]{
   transition: 0.3s;
 }
 
+.contact_input {
+  text-align: center;
+}
+
 .contact_btn {
   color: #fff;
   position: relative;
-  transition: all 0.5s;
   line-height: 2.8em;
   width: 130px;
-  transition: 0.5s;
-  margin: 0 auto;
   border: none;
+  margin: auto;
 }
 
 .contact_btn::before {
-  transition: 0.3s;
   content: url(../img/mailicon.svg);
   width: 25px;
   position: absolute;
