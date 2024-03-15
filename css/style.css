@@ -62,25 +62,30 @@ a {
 /* メイン */
 /* トップ */
 .top_contents {
+  width: 100%;
   position: relative;
 }
 
-.top_text_box {
-  position: absolute;
-  top: 10%;
-  left: 20%;
+.img_top {
+  width: 60%;
 }
 
 .top_img {
   text-align: right;
-  size: 100%;
+}
+
+.top_text_box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10% 20%;
 }
 
 .top_ttl {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 60px;
   color: #c71585;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 .indie-flower-regular {
@@ -234,20 +239,28 @@ a {
 }
 
 .service_text {
+  color: #fff;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.service_text {
+.service_text2 {
+  text-align: left;
   color: #fff;
-  padding: 20px 0px;
-  text-align: center;
+  padding: 15px 0px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .service_discription {
   color: #fff;
-  line-height: 30px;
-  padding: 0px 50px;
+  line-height: 25px;
+}
+
+.service_text_box {
+  padding: 15px;
 }
 
 /* blog */
@@ -255,8 +268,9 @@ a {
   background: #f5f5f5;
   padding: 10% 10%;
 }
+
 .blog_card {
-  width: 300px;
+  width: 30%;
   border-radius: 20px;
   background: #fff;
 }
@@ -383,52 +397,26 @@ th {
   font-size: 25px;text-align: center;
 }
 
-input {
+.contact_line {
   text-align: center;
-}
-
-.contact_input_text {
-  font-size: 25px;
-  outline: none;
-  border: none;
-  caret-color: #c71585;
+  font-size: 40px;
+  color: #c71585;
   padding: 20px;
   margin: 20px 0xp;
 }
 
-.contact_submit {
+.contact_btn {
   position: relative;
   background: linear-gradient(90deg, #df00c2, #d5009e);
   box-shadow: 0px 5px 3px #993399;
-  width: 250px;
+  width: 200px;
+  display: block;
   padding: 18px;
+  text-align: center;
   color: #fff;
   font-size: 16px;
   text-decoration: none;
   border-radius: 30px;
-  border: none;
-  z-index: 0;
-}
-
-input [type="submit"]{
-  /* display: block; */
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  transition: 0.3s;
-}
-
-.contact_input {
-  text-align: center;
-}
-
-.contact_btn {
-  color: #fff;
-  position: relative;
-  line-height: 2.8em;
-  width: 130px;
-  border: none;
   margin: auto;
 }
 
